@@ -72,7 +72,7 @@ echo "-- $USER@$HOST/$GIT_PATH/$REPO"
 echo "--"
 
 
-ssh $USER@$HOST 'mkdir '$GIT_PATH'/'$REPO' ; mkdir '$GIT_PATH'/'$REPO'/'$PROJET' ; mkdir '$GIT_PATH'/'$REPO'/'$PROJET'-'$NOW' ; cd '$GIT_PATH'/'$REPO'/'$PROJET'-'$NOW' && git init && git pull '$ADDRESS
+ssh $USER@$HOST 'mkdir '$GIT_PATH'/'$REPO' ; mkdir '$GIT_PATH'/'$REPO'/'$PROJET'-'$NOW' ; cd '$GIT_PATH'/'$REPO'/'$PROJET'-'$NOW' && git init && git pull '$ADDRESS
 
 
 
