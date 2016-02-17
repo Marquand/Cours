@@ -49,17 +49,13 @@ echo "--"
 echo -e "-- Récupération des fichiers + Envoi vers => [\033[32m' $ADDRESS '\033[0m]"
 echo "--"
 
-
+echo -n "Commentaire :"
+read COMMENTAIRE
+echo -e "Ok [\033[32m'$COMMENTAIRE'\033[0m]"
 
 git init
 git add .
 git config --global push.default simple
- 
-echo -n "Commentaire :"
-read COMMENTAIRE
-
-echo -e "Ok [\033[32m'$COMMENTAIRE'\033[0m]"
-
 git commit -m "'$now' - '$COMMENTAIRE' "
 git push --set-upstream $ADDRESS master
 git merge master
@@ -72,7 +68,7 @@ echo "-- $USER@$HOST/$GIT_PATH/$REPO"
 echo "--"
 
 
-ssh $USER@$HOST 'mkdir '$GIT_PATH' ; mkdir '$GIT_PATH'/'$PROJET'/'$NOW' ; cd '$GIT_PATH'/'$PROJET'/'$NOW' && git init && git pull '$ADDRESS
+ssh $USER@$HOST 'mkdir '$GIT_PATH' ; mkdir '$GIT_PATH'/'$PROJET'/'$NOW' ; mkdir '$GIT_PATH'/'$PROJET'/'$NOW' ; cd '$GIT_PATH'/'$PROJET'/'$NOW' && git init && git pull '$ADDRESS
 
 
 
