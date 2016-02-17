@@ -58,8 +58,6 @@ echo -e "Ok [\033[32m'$COMMENTAIRE'\033[0m]"
 git init
 git add .
 git config --global push.default simple
-
-
 git commit -m "'$now' - '$COMMENTAIRE' "
 git push --set-upstream $ADDRESS master
 git merge master
