@@ -72,13 +72,13 @@ echo "-- $USER@$HOST/$GIT_PATH/$REPO"
 echo "--"
 
 
-ssh $USER@$HOST 'mkdir '$GIT_PATH'/'$REPO' ; mkdir '$GIT_PATH'/'$REPO'/'$PROJET'-'$NOW' ; cd '$GIT_PATH'/'$REPO'/'$PROJET'-'$NOW' && git init && git pull '$ADDRESS
+ssh $USER@$HOST 'mkdir '$GIT_PATH' ; mkdir '$GIT_PATH'/'$PROJET'-'$NOW' ; cd '$GIT_PATH'/'$PROJET'-'$NOW' && git init && git pull '$ADDRESS
 
 
 
 echo "--"
 echo "-- Your new git repo '$REPO' is ready and initialized at:"
-echo "-- $USER@$HOST/$GIT_PATH/$REPO/$PROJET/$NOW"
+echo "-- $USER@$HOST/$GIT_PATH/$PROJET-$NOW"
 echo "--"
 echo -e "[\033[32mok\033[0m]"
 
