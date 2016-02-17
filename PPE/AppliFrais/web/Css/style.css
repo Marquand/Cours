@@ -1,0 +1,191 @@
+body,
+html {
+    max-width: auto;
+    min-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFF;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    text-decoration: none;
+    color: #333;
+}
+
+p {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #333;
+}
+
+.soustitre {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #333;
+}
+
+.sousp {
+    margin-left: 30px;
+}
+
+.deco {
+    position: absolute;
+    bottom: 20px;
+}
+
+h1 {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 300;
+    color: #333;
+    margin: 0px;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #333;
+}
+
+.menuv {
+    background-color: #eeeeee;
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    border-right: 1px solid #cccccc;
+}
+
+.menustru {
+    margin: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.title {
+    border-bottom: 1px solid #cccccc;
+    background-color: #e1e1e1;
+}
+
+
+/*--------- Debut contenu ---------*/
+
+.content {
+    position: absolute;
+    left: 220px;
+    text-align: left;
+}
+
+
+/*---------- FORM -----------*/
+
+select {
+    padding: 3px;
+    padding-right: 20px;
+    margin: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color: #888;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {
+        padding-right: 18px
+    }
+}
+
+label {
+    position: relative;
+    left: 50px;
+}
+
+label:after {
+    content: '<>';
+    font: 11px "Consolas", monospace;
+    color: #aaa;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 8px;
+    top: 2px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    pointer-events: none;
+}
+
+label:before {
+    content: '';
+    right: 6px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    background: #f8f8f8;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+}
+
+input {
+    position: relative;
+    left: 50px;
+    padding: 5px;
+    width: 120%;
+    color: #333;
+    background: #FFF none repeat scroll 0% 0%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b9b9b9;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-radius: 20px;
+}
+
+.inputpo {
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+
+/*------------ Bouton -------------*/
+
+a.button {
+    color: #000;
+    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 1px inset;
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    display: block;
+    
+    max-width: 110px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 15px;
+    margin-left: 120px;
+}
+
+a.button:hover {
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(181, 181, 181, 0.7) 0 0px 0px 40px inset;
+}

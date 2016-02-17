@@ -1,0 +1,127 @@
+=========================================================
+
+Nettoyage de l'environnement:
+
+- On supprime le dossier “NomAPP/src/Acme”
+
+- On supprime les entrées concernant “AcmeBundle” dans le fichie : “NomAPP/app/config/routing_dev.yml”
+  Les 3 premières routes dans le fichier app/config/routing_dev.yml (_welcome, _demo_secured et _demo).
+
+- La route NomAPPNomBundleBundle_homepage dans Resources/config/routing.yml.
+
+- On supprime du AcmeBundle de la liste des bndles dans le fichier “videotheque/app/AppKernel.php”
+  La ligne 26 du fichier app/AppKernel.php, celle qui active le bundle AcmeDemoBundle ($bundles[] = new Acme\DemoBundle\AcmeDemoBundle()) ;
+
+- On supprime le dossier “web/bundles/acmedemo”
+
+- Re-vérifier NomAPP/app/config/security.yml
+
+- Le contrôleur Controller/DefaultController.php ;
+
+- Les vues dans le répertoire Resources/views/Default ;
+
+=========================================================
+creation de bundle:
+php app/console generate:bundle --namespace=NomAPP/NomBundleBundle --bundle-name="NomAPPNomBundleBundle" --dir="src" --format="annotation" --structure=yes
+
+ajouter notre bundle à Symfony2:
+  Editer le fichier “app/appKernel.php”:
+  new NomAPP\Bundle\NomBundleBundle\NomAPPNomBundleBundle(),
+
+  Editer le fichier “app/config/routing.yml”:
+  nomAPP_nombundle:
+    resource: "@NomAPPNomBundleBundle/Controller/"
+    type:     annotation
+    prefix:   /
+  
+
+=========================================================
+Mise à jour schéma BDD
+php app/console doctrine:schema:update --force
+
+Générer les entités depuis la BDD:
+
+1 - La première étape permettant de construire les classes entité depuis une base de données existante et
+    de demander à Doctrine d'introspecter cette dernière et de générer les fichiers de méta-données correspondants. 
+    Les fichiers de méta-données décrivent la classe entité à générer en se basant sur les champs des tables.
+
+$ php app/console doctrine:mapping:convert xml ./src/NomAPP/NomBundleBundle/Resources/config/doctrine/metadata/orm --from-database --force
+
+2- Demander à Doctrine d'importer le schéma et de construire les classes entité 
+   qui lui sont liées en exécutant les deux commandes suivantes.
+
+$ php app/console doctrine:mapping:import NomAPPNomBundleBundle annotation
+$ php app/console doctrine:generate:entities NomAPPNomBundleBundle
+
+=========================================================
+Création d'une route:
+Pour créer une page, il faut d'abord définir l'URL à laquelle elle sera accessible. 
+Pour cela, il faut créer la route de cette page.
+Le rôle d'une route est d'associer une URL à une action du contrôleur.
+
+# src/NomAPP/NomBundleBundle/Resources/config/routing.yml
+
+nom_route
+    path:     /chemin/d/appel
+    defaults: { _controller: NomAPPNomBundleBundle:NomController:nomMethodeAction }
+
+
+$ php app/console router:debug : afin de savoir quelles routes sont trouvées par symfony
+
+=========================================================
+
+Création d'un controleur:
+
+- Dans le bundle concerné
+
+<?php
+
+// src/nomAPP/NomBundleBundle/Controller/NomControllerController.php
+
+namespace nomAPP\NomBundleBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
+
+class BlogController extends Controller
+{
+  public function indexAction()
+  {
+    return new Response("Hello World !");
+  }
+
+  public function nomActionAction()
+  {
+    return $this->render('NomAPPNomBundleBundle:NomDossier:nomPage.html.twig', array('nomVar'=>$Valeurs)); 
+//dans html {{nomVar}}
+  }
+
+}
+
+ <ul>
+    {% for iObj in nomVar %}
+      <li>
+        <a href="{{ path('nom_route', {'nomParam': iObj.att1}) }}">{{ iObj.att2 }}</a>
+        par {{ iObj.att3 }},
+        le {{ iObj.attDate|date('d/m/Y') }}
+      </li>
+    {% else %}
+      <li>Pas (encore !) d'éléments</li>
+    {% endfor %}
+  </ul>
+
+
+ou
+
+
+class DefaultController extends Controller
+{
+    /**
+     * @Route("/")
+     * @Template()    ou @Template(“NomAPPNomBundleBundle:NomDossier:index.html.twig”).
+     */
+    public function indexAction()
+    {
+        return array('name' => "");
+    }
+}

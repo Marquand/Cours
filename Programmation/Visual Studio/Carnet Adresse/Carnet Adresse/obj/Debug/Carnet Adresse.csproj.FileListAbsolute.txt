@@ -1,0 +1,19 @@
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\bin\Debug\Carnet Adresse.exe.config
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\bin\Debug\Database1.sdf
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\bin\Debug\Carnet Adresse.exe
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\bin\Debug\Carnet Adresse.pdb
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet Adresse.csprojResolveAssemblyReference.cache
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet_Adresse.Form1.resources
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet_Adresse.Properties.Resources.resources
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet Adresse.csproj.GenerateResource.Cache
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet Adresse.exe
+C:\Users\m.benadi\Desktop\Projets C#\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet Adresse.pdb
+C:\Users\a.just\Desktop\Carnet Adresse\Carnet Adresse\bin\Debug\Carnet Adresse.exe.config
+C:\Users\a.just\Desktop\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet Adresse.exe
+C:\Users\a.just\Desktop\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet Adresse.pdb
+C:\Users\a.just\Desktop\Carnet Adresse\Carnet Adresse\bin\Debug\Carnet Adresse.exe
+C:\Users\a.just\Desktop\Carnet Adresse\Carnet Adresse\bin\Debug\Carnet Adresse.pdb
+C:\Users\a.just\Desktop\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet Adresse.csprojResolveAssemblyReference.cache
+C:\Users\a.just\Desktop\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet_Adresse.Form1.resources
+C:\Users\a.just\Desktop\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet_Adresse.Properties.Resources.resources
+C:\Users\a.just\Desktop\Carnet Adresse\Carnet Adresse\obj\Debug\Carnet Adresse.csproj.GenerateResource.Cache

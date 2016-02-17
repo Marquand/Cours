@@ -1,0 +1,146 @@
+body,
+html {
+    max-width: auto;
+    min-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFF;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    text-decoration: none;
+    color: #333;
+}
+
+p {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #333;
+}
+
+
+
+.deco {
+    position: absolute;
+    bottom: 20px;
+}
+
+h1 {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 300;
+    color: #333;
+    margin: 0px;
+}
+
+
+.menuv {
+    background-color: #eeeeee;
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    border-right: 1px solid #cccccc;
+}
+
+.menustru {
+    margin: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.title {
+    border-bottom: 1px solid #cccccc;
+    background-color: #e1e1e1;
+}
+
+
+/*--------- Debut contenu ---------*/
+
+.content {
+    width: 450px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 35%;
+    text-align: left;
+    margin: 100px;
+    background-color: #E1E1E1;
+    border: 1px solid #CCC;
+}
+
+
+/*---------- FORM -----------*/
+.pl{
+    position: relative;
+    left: 65px;
+    top: 20px;
+    
+}
+
+select {
+    padding: 3px;
+    padding-right: 20px;
+    margin: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color: #888;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {
+        padding-right: 18px
+    }
+}
+
+label {
+    position: relative;
+    left: 50px;
+    margin-left: 220px;
+    top: -20px;
+}
+
+label:after {
+    content: '<>';
+    font: 11px "Consolas", monospace;
+    color: #aaa;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 8px;
+    top: 2px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    pointer-events: none;
+}
+
+label:before {
+    content: '';
+    right: 6px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    background: #f8f8f8;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+}
+

@@ -1,0 +1,95 @@
+import java.util.Vector;
+
+
+public class Banque {
+	
+	//attribut
+	private String nom;
+	
+	//Variables statiques
+	private static int numClient= 1;
+	private static int numCompte= 1;
+	
+	//Attributs association
+	private Vector<Client> lesClients = new Vector<Client>();
+	private Vector<Compte> lesComptes = new Vector<Compte>();
+	
+	//Constructeur
+	public Banque(String nom){
+		this.nom = nom;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public static int getNumClient() {
+		return numClient;
+	}
+
+	public static void setNumClient(int numClient) {
+		Banque.numClient = numClient;
+	}
+
+	public static int getNumCompte() {
+		return numCompte;
+	}
+
+	public static void setNumCompte(int numCompte) {
+		Banque.numCompte = numCompte;
+	}
+
+	public Vector<Client> getLesClients() {
+		return lesClients;
+	}
+
+	public void setLesClients(Vector<Client> lesClients) {
+		this.lesClients = lesClients;
+	}
+
+	public Vector<Compte> getLesComptes() {
+		return lesComptes;
+	}
+
+	public void setLesComptes(Vector<Compte> lesComptes) {
+		this.lesComptes = lesComptes;
+	}
+	
+	public void ajouterClient (String nom, String prenom, String adresse){
+		//Création d'un client
+		Client nouveauClient = new Client (numClient, nom, prenom, adresse);
+		numClient++;
+		//Ajouter le client à la liste des clients
+		this.lesClients.add(nouveauClient);
+		System.out.println("Infos: Client ajouter avec succès !");
+	}
+	
+	public Vector<Client> rechercherClient(String nom){
+		Vector<Client> resultat = new Vector<Client>();
+		
+		//Pour chaque "unclient" dans lesClients
+		for(Client unClient : this.lesClients){
+			
+			if(unClient.getNom().indexOf(nom) >= 0)
+				resultat.add(unClient);
+			
+		}
+	return resultat;
+}
+	public Vector<Compte> rechercherCompte(int num){
+		Vector<Compte> resultat = new Vector<Compte>();
+			return null;
+		
+			
+		}
+	
+	public void afficherListeClient(){
+		
+	}
+	
+
+}

@@ -1,0 +1,19 @@
+hvc_site_homepage:
+    path:     /
+    defaults: { _controller: HVCSiteBundle:Public:index }
+
+hvc_site_SuiviC:
+    path:    /SuiviC
+    defaults: { _controller: HVCSiteBundle:Public:SuiviC }
+
+hvc_site_saisirV:
+    path:    /saisirV
+    defaults: { _controller: HVCSiteBundle:Public:saisirV }
+
+hvc_site_consulterC:
+    path:    /consulterC
+    defaults: { _controller: HVCSiteBundle:Public:consulterC }
+
+hvc_site_table:
+    path:    /table
+    defaults: { _controller: HVCSiteBundle:Public:table }

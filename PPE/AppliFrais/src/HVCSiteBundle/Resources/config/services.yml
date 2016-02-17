@@ -1,0 +1,4 @@
+services:
+#    hvc_site.example:
+#        class: HVCSiteBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

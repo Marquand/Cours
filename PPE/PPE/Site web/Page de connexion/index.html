@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+<header>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <title>GSB PPE</title>
+    <meta name="description" content="Site Web destinée à la gestion des notes de frais " />
+</header>
+
+
+<body>
+    <br>
+    <p class="p-titre"><strong>HVCODE</strong>
+    </p>
+    <p class="p-sous-titre">Se connecter pour ajouter un compte</p>
+
+    <br>
+
+    <div class="co">
+
+
+        <div class="co2">
+
+            <img class="imglogo" src="images/cologo.png"></img>
+
+            <form action="login.php" method="post">
+
+                <input class="Email" type="text" name="login" placeholder="Saisissez votre login" />
+
+                <input class="mdp" type="password" name="mdp" placeholder="Mot de passe" />
+                <a class="linkmdp" href="#">
+                    <p>Mot de passe oublié ?</p>
+                </a>
+                <input type="hidden" name="verif" value="Ok" />
+                <input type="checkbox" name="stay" checked="checked" />
+                <label for="stay">Rester connecté ?</label>
+                <input class="Connexion" type="submit" name="submit" value="Connexion" />
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>

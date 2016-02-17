@@ -1,0 +1,9 @@
+C:\Users\mo.aouar\Desktop\Appli mdr\Appli mdr\bin\Debug\Appli mdr.exe.config
+C:\Users\mo.aouar\Desktop\Appli mdr\Appli mdr\bin\Debug\Appli mdr.exe
+C:\Users\mo.aouar\Desktop\Appli mdr\Appli mdr\bin\Debug\Appli mdr.pdb
+C:\Users\mo.aouar\Desktop\Appli mdr\Appli mdr\obj\Debug\Appli mdr.csprojResolveAssemblyReference.cache
+C:\Users\mo.aouar\Desktop\Appli mdr\Appli mdr\obj\Debug\Appli_mdr.Form1.resources
+C:\Users\mo.aouar\Desktop\Appli mdr\Appli mdr\obj\Debug\Appli_mdr.Properties.Resources.resources
+C:\Users\mo.aouar\Desktop\Appli mdr\Appli mdr\obj\Debug\Appli mdr.csproj.GenerateResource.Cache
+C:\Users\mo.aouar\Desktop\Appli mdr\Appli mdr\obj\Debug\Appli mdr.exe
+C:\Users\mo.aouar\Desktop\Appli mdr\Appli mdr\obj\Debug\Appli mdr.pdb

@@ -1,0 +1,7 @@
+hvc_site:
+    resource: "@HVCSiteBundle/Resources/config/routing.yml"
+    prefix:   /Appli
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,149 @@
+body,
+html {
+    max-width: auto;
+    min-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+    background-image: url('../Images/backco.jpg');
+	height:100%; width:100%; position:absolute;-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;"
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;  
+}
+
+p {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+}
+
+.connexion {
+    background-color: rgba(0, 0, 0, 0.5);
+    width:400px;
+    height:200px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    border-radius: 20px;
+}
+
+.poinput {
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.posp {
+    position: relative;
+    left: 80px;
+    top: -78px;
+}
+
+
+input {
+    
+    padding: 5px;
+    width: 75%;
+    color: #333;
+    background: #FFF none repeat scroll 0% 0%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b9b9b9;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+
+/* SQUARED FOUR */
+.squaredFour {
+	width: 20px;	
+	margin: 20px auto;
+	position: relative;
+    left: -140px;
+}
+
+.squaredFour label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	border-radius: 20px;
+
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.squaredFour label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.squaredFour label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.5;
+}
+
+.squaredFour input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+
+/*------------ Bouton -------------*/
+
+a.button {
+	color: #000;
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 1px inset;
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	display: block;
+
+	max-width: 110px;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 5px 15px;
+	margin-left: 120px;
+}
+
+a.button:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(181, 181, 181, 0.7) 0 0px 0px 40px inset;
+}

@@ -1,0 +1,15 @@
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\bin\Debug\Appli mdr.exe.config
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\obj\Debug\Appli mdr.exe
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\obj\Debug\Appli mdr.pdb
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\bin\Debug\Appli mdr.exe
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\bin\Debug\Appli mdr.pdb
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\obj\Debug\Calculatrice.csprojResolveAssemblyReference.cache
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\obj\Debug\Appli_mdr.Form1.resources
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\obj\Debug\Appli_mdr.Properties.Resources.resources
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\obj\Debug\Calculatrice.csproj.GenerateResource.Cache
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\bin\Debug\fr-FR\Appli mdr.resources.dll
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\obj\Debug\Appli_mdr.Form1.fr-FR.resources
+E:\Cours BTS\Programmation\Visual Studio\Appli mdr\obj\Debug\fr-FR\Appli mdr.resources.dll
+E:\Cours BTS\Programmation\Visual Studio\Calculatrice\bin\Debug\Appli mdr.exe.config
+E:\Cours BTS\Programmation\Visual Studio\Calculatrice\obj\Debug\Appli mdr.exe
+E:\Cours BTS\Programmation\Visual Studio\Calculatrice\obj\Debug\Appli mdr.pdb
